@@ -8,6 +8,10 @@ El proyecto replica el diseno visual compartido y agrega mejoras de accesibilida
 
 - GitHub: [JManuelPorras/Sitio-web-Azucararte](https://github.com/JManuelPorras/Sitio-web-Azucararte)
 
+## Sitio en Producción
+
+- Vercel: [https://sitio-web-azucararte.vercel.app/](https://sitio-web-azucararte.vercel.app/)
+
 ## Demo local
 
 Importante: como el sitio carga datos desde un archivo JSON con fetch, no se recomienda abrir los HTML con doble clic.
