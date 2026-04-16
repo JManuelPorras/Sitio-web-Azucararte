@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú | Azucararte</title>
+    <meta
+      name="description"
+      content="Menú completo de Azucararte con precios en CUP."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="menu-page min-h-screen text-white">
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <header
+      class="sticky top-0 z-30 border-b border-white/15 bg-black/90 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 md:px-6"
+      >
+        <a href="index.html" class="brand-font text-2xl font-bold tracking-wide"
+          >Azucararte</a
+        >
+
+        <nav aria-label="Navegación principal" class="hidden gap-6 md:flex">
+          <a href="index.html" class="font-semibold">Inicio</a>
+          <a href="menu.html" aria-current="page" class="font-semibold">Menú</a>
+          <a href="contacto.html" class="font-semibold">Contacto</a>
+        </nav>
+
+        <button
+          type="button"
+          class="rounded-md border border-white/30 p-2 md:hidden"
+          aria-label="Abrir navegación"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        aria-label="Navegación móvil"
+        class="hidden border-t border-white/20 bg-black px-4 py-3 md:hidden"
+        data-mobile-nav
+      >
+        <ul class="space-y-3">
+          <li><a href="index.html" class="block font-semibold">Inicio</a></li>
+          <li>
+            <a href="menu.html" class="block font-semibold" aria-current="page"
+              >Menú</a
+            >
+          </li>
+          <li>
+            <a href="contacto.html" class="block font-semibold">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      id="contenido"
+      class="mx-auto w-full max-w-6xl space-y-8 px-4 py-8 md:space-y-10 md:px-6 md:py-12"
+    >
+      <section
+        class="rounded-[28px] border border-white/10 bg-[#0d0d0d] p-6 md:p-10"
+      >
+        <p class="mx-auto mb-5 h-px w-52 bg-white/40"></p>
+        <h1 class="text-center text-5xl font-bold uppercase md:text-7xl">
+          Menú
+        </h1>
+        <p
+          class="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-white/85"
+        >
+          Cuba es un crisol de tradiciones y cada dulce cuenta una historia.
+          Elige tus favoritos y coordina tu pedido.
+        </p>
+      </section>
+
+      <section
+        class="rounded-[28px] border border-white/10 bg-[#0d0d0d] p-6 md:p-10"
+        aria-labelledby="titulo-dulces"
+      >
+        <h2
+          id="titulo-dulces"
+          class="mb-6 text-center text-4xl font-bold uppercase"
+        >
+          Dulces
+        </h2>
+        <div
+          class="grid gap-y-4 text-xl sm:grid-cols-2"
+          data-menu-section="dulces"
+        >
+          <div class="font-bold">Polvorones</div>
+          <div class="text-right font-bold">25 CUP</div>
+          <div class="font-bold">Roscas</div>
+          <div class="text-right font-bold">25 CUP</div>
+          <div class="font-bold">Orejones</div>
+          <div class="text-right font-bold">30 CUP</div>
+          <div class="font-bold">Pasteles</div>
+          <div class="text-right font-bold">30 CUP</div>
+          <div class="font-bold">Panque</div>
+          <div class="text-right font-bold">35 CUP</div>
+          <div class="font-bold">Masa real</div>
+          <div class="text-right font-bold">50 CUP</div>
+          <div class="font-bold">Merenguitos</div>
+          <div class="text-right font-bold">15 CUP</div>
+          <div class="font-bold">Señoritas</div>
+          <div class="text-right font-bold">50 CUP</div>
+          <div class="font-bold">Brownies</div>
+          <div class="text-right font-bold">65 CUP</div>
+          <div class="font-bold">Coffe cakes</div>
+          <div class="text-right font-bold">30 CUP</div>
+          <div class="font-bold">Marquesitas</div>
+          <div class="text-right font-bold">50 CUP</div>
+          <div class="font-bold">Montecristo</div>
+          <div class="text-right font-bold">35 CUP</div>
+        </div>
+      </section>
+
+      <section
+        class="rounded-[28px] border border-white/10 bg-[#0d0d0d] p-6 md:p-10"
+        aria-labelledby="titulo-grandes"
+      >
+        <h2
+          id="titulo-grandes"
+          class="mb-6 text-center text-4xl font-bold uppercase"
+        >
+          Grandes
+        </h2>
+        <div
+          class="grid gap-y-4 text-xl sm:grid-cols-2"
+          data-menu-section="grandes"
+        >
+          <div class="font-bold">Cakes</div>
+          <div class="text-right font-bold">800 CUP</div>
+          <div class="font-bold">Media luna</div>
+          <div class="text-right font-bold">450 CUP</div>
+          <div class="font-bold">Pies</div>
+          <div class="text-right font-bold">600 CUP</div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden rounded-[28px] border border-white/10">
+        <img
+          src="img/Footer de grandes.jpg"
+          alt="Cake decorado de Azucararte"
+          class="h-72 w-full object-cover opacity-80 md:h-80"
+          loading="lazy"
+        />
+      </section>
+    </main>
+
+    <footer class="border-t border-white/15 py-8 text-white/70">
+      <div class="mx-auto w-full max-w-6xl px-4 md:px-6">
+        <p class="text-sm">
+          Precios sujetos a disponibilidad. Escríbenos para confirmar tu pedido.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu-data.js"></script>
+  </body>
+</html>

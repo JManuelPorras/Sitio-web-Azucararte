@@ -1,0 +1,125 @@
+:root {
+  --az-bg: #f3f1ec;
+  --az-surface: #fbfaf7;
+  --az-dark: #121212;
+  --az-dark-soft: #1f1f1f;
+  --az-sage: #9ec6b8;
+  --az-accent: #cc7a5b;
+  --az-text: #181818;
+  --az-muted: #595959;
+  --az-ring: #d08c70;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito Sans", "Segoe UI", sans-serif;
+  color: var(--az-text);
+  background: radial-gradient(circle at top right, #fff4e7 0%, var(--az-bg) 52%, #efece5 100%);
+}
+
+body.menu-page {
+  background: #050505;
+  color: #f3f3f3;
+}
+
+h1,
+h2,
+h3,
+.brand-font {
+  font-family: "Bodoni Moda", Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  z-index: 50;
+  padding: 0.7rem 1rem;
+  border-radius: 0 0 12px 0;
+  background: var(--az-dark);
+  color: #fff;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.section-shell {
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 10px 28px rgba(14, 14, 14, 0.05);
+}
+
+.dark-shell {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.96)),
+    radial-gradient(circle at 25% 0%, rgba(204, 122, 91, 0.22), transparent 55%);
+  color: #f3f3f3;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.cta-pill {
+  border-radius: 999px;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.cta-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+}
+
+.cta-pill:active {
+  transform: translateY(0);
+}
+
+.cta-pill:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--az-ring);
+  outline-offset: 3px;
+}
+
+.fade-up {
+  animation: fade-up 500ms ease both;
+}
+
+.fade-up-delay {
+  animation: fade-up 700ms ease both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .fade-up-delay,
+  .cta-pill {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-shell,
+  .dark-shell {
+    border-radius: 22px;
+  }
+}

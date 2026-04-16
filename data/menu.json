@@ -1,0 +1,55 @@
+{
+  "featured": [
+    {
+      "name": "Deliciosos cakes",
+      "image": "img/Deliciosos cakes.jpg",
+      "alt": "Cake decorado con crema"
+    },
+    {
+      "name": "Orejones almibados",
+      "image": "img/Orejones almibados.jpg",
+      "alt": "Orejones almibados en un plato"
+    },
+    {
+      "name": "Deliciosos pies",
+      "image": "img/Deliciosos pies.jpg",
+      "alt": "Pie horneado artesanal"
+    }
+  ],
+  "sections": [
+    {
+      "id": "dulces",
+      "title": "Dulces",
+      "items": [
+        { "name": "Polvorones", "price": 25 },
+        { "name": "Roscas", "price": 25 },
+        { "name": "Orejones", "price": 30 },
+        { "name": "Pasteles", "price": 30 },
+        { "name": "Panque", "price": 35 },
+        { "name": "Masa real", "price": 50 },
+        { "name": "Merenguitos", "price": 15 },
+        { "name": "Señoritas", "price": 50 },
+        { "name": "Brownies", "price": 65 },
+        { "name": "Coffee cakes", "price": 30 },
+        { "name": "Marquesitas", "price": 50 },
+        { "name": "Montecristo", "price": 35 }
+      ]
+    },
+    {
+      "id": "grandes",
+      "title": "Grandes",
+      "items": [
+        { "name": "Cakes", "price": 800 },
+        { "name": "Media luna", "price": 450 },
+        { "name": "Pies", "price": 600 }
+      ]
+    }
+  ],
+  "contact": {
+    "address": "Calle Línea, #1404 E/ 29 y 30, Cárdenas, Matanzas",
+    "primaryPhone": "+53 54117479",
+    "secondaryPhone": "45526092",
+    "whatsappGroupUrl": "https://chat.whatsapp.com/L0MeEaWjbv86PmD8Qn207R?mode=gil_t",
+    "whatsappGroupLabel": "Abre este enlace para unirte a mi grupo de WhatsApp"
+  }
+}
